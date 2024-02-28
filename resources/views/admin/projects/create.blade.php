@@ -21,7 +21,7 @@
         <div class="mb-3">
             <label for="image" class="form-label">Image</label>
             <input type="file" class="form-control @error('image') is-invalid @enderror" id="exampleInputPassword1"
-                name="image" value="{{ old('image') }}">
+                name="image">
             @error('image')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
