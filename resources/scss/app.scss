@@ -1,0 +1,15 @@
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    overflow-x: hidden;
+}
+
+.card_content{
+    min-height: 300px;
+
+    img{
+        width: 100%;
+        height: 290px;
+    }
+}
+
