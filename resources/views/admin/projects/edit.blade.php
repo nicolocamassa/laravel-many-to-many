@@ -44,6 +44,26 @@
               <div class="text-danger">{{ $message }}</div>
             @enderror
         </div>
+
+        <div class="mb-3">
+            <div for="technologies" class="form-label">Technologies</div>
+            
+                @foreach($technologies as $technology)
+                <div class="form-check-inline">
+                    <div>
+                        <input class="form-check-input" name="technology[]" value="{{ $technology->id }}" type="checkbox" id="technology">
+                        <label class="form-check-label" for="technology">
+                            {{ $technology->technology }}
+                        </label>
+                    </div>
+                </div>
+                @endforeach
+            
+            @error('language')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
+        
         <div class="mb-3">
             <div class="mb-3">
                 <label for="type_id" class="form-label">Type</label>
